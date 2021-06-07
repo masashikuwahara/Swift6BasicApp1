@@ -59,6 +59,7 @@
                         <outlet property="BlurView" destination="tTX-Ht-1Cn" id="Bkh-20-9Gv"/>
                         <outlet property="CountLabel" destination="vpl-gj-LhY" id="Kvs-FR-7tK"/>
                         <outlet property="imageView" destination="Mv8-Sp-MDU" id="upS-8S-FDy"/>
+                        <outlet property="tapCountLabel" destination="n7a-eq-Q3A" id="QEu-WE-BwZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

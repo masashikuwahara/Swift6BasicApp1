@@ -14,7 +14,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var BlurView: UIVisualEffectView!
     
-    @IBOutlet weak var CountLabel: UILabel!
+    @IBOutlet weak var countLabel: UILabel!
+    
+    @IBOutlet weak var tapCountLabel: UILabel!
+    
     
     var count = 0
     
@@ -31,7 +34,32 @@ class ViewController: UIViewController {
     
     //ここが呼ばれる
         count = count + 1
-        countLabel.text = count
+        countLabel.text = String(count)
+        
+        //if文
+        if count > 5{
+            imageView.image = UIImage(named: "back2")
+            
+        }
+        
+        if count > 10{
+            
+            imageView.image = UIImage(named: "back3")
+            
+        }
+        
+        switch count {
+        case 6:
+            
+            tapCountLabel.text = "6です"
+            break
+        case 10:
+            tapCountLabel.text = "10です"
+            break
+        default:
+            tapCountLabel.text = "6でも10でもありません"
+        }
+   
         
     }
     
