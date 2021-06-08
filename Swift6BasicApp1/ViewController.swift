@@ -35,17 +35,13 @@ class ViewController: UIViewController {
     //ここが呼ばれる
         count = count + 1
         countLabel.text = String(count)
-        
         //if文
         if count > 5{
             imageView.image = UIImage(named: "back2")
-            
         }
         
         if count > 10{
-            
             imageView.image = UIImage(named: "back3")
-            
         }
         
         switch count {
@@ -58,6 +54,7 @@ class ViewController: UIViewController {
             break
         default:
             tapCountLabel.text = "6でも10でもありません"
+            
         }
    
         
